@@ -1,0 +1,110 @@
+body {
+    background-color: #E9D5CA;
+    margin: 0;
+    color: #363062;
+    user-select: none;
+    animation: fadein 1s ease-in-out;
+
+}
+
+@keyframes wrong {
+    from {
+        background-color: #E9D5CA;
+    }
+
+    to {
+        background-color: rgb(240, 121, 121);
+    }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.title {
+    margin-top: 6%;
+    margin: 8%;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+}
+
+.card {
+    background-color: #827397;
+    font-family: 'Signika Negative', sans-serif;
+    height: 430px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: -5%;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card>p {
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+#next {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E9D5CA;
+    color: black;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#next:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+button {
+    background-color: #4D4C7D;
+    color: white;
+    margin-top: 30px;
+    margin-left: 80px;
+    display: block;
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
+    border: solid black 1px;
+    height: 60px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #827397;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Hide {
+    display: none;
+}
+
+.wrongChoice {
+    animation: wrong 2s ease-in-out;
+}
+
+.correct {
+    pointer-events: none;
+    background-color: #E9D5CA;
+    color: black;
+}
